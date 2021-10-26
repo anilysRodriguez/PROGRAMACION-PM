@@ -1,0 +1,114 @@
+*{
+    text-align: center;
+    font-family: monospace;
+    margin: 0%;
+}
+#que{
+    display: grid;
+    grid-template-areas: "aside cabeza cabeza"
+                          "aside cuerpo cuerpo"
+                          "aside cuerpo cuerpo"
+                          "aside move move";
+}
+body{
+    width: auto;
+    height: auto;
+}
+#cabeza{
+    font-size: 0.5cm;
+    border: solid 1px;
+    border-color: #50C878;
+
+    background-color: #50C878;
+    color: white;
+    padding: 20px;
+    grid-area: cabeza;
+}
+#cuerpo{
+    border-radius: 10px;
+    background-color: #bdc8cf;
+    color: rgb(0, 0, 0);
+    font-size:larger;
+    grid-area: cuerpo;
+    margin: 40px;
+}
+#cuerpo>p{
+    padding: 20px;
+}
+#ejemplo{
+    background-color: #01395c;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    padding: 30px;  
+    color: white; 
+}
+#aside{
+    grid-area: aside;
+    padding: 30px;
+    background-color: #01395c ;
+
+}
+.move{
+    display: flex;
+    width: 100%;   
+}
+#button2{
+    position: absolute;
+    right:    0;
+    margin: 5px;
+}
+#button1{
+    margin: 5px;
+}
+
+
+a{
+    text-decoration: none;  
+    color: aliceblue; 
+    font-weight: bold;
+    font-size: 5mm;  
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #50C878 ;
+}
+#reses{
+width: 30px;
+height: auto;
+margin: 2% 40% 2% 40%;
+display: grid;
+grid-template-areas: "tabla1 tabla2 tabla3 tabla4 tabla5 tabla6 ";
+}
+p[id~="tabla"]{
+padding: 2px;
+width: 30px;
+height: auto;
+border: 3px solid;
+border-color: #01395c;
+}
+#tabla1{
+grid-area: tabla1;
+margin: 10px;
+}
+#tabla2{
+    grid-area: tabla2;
+    margin: 10px;
+    }
+#tabla3{
+    grid-area: tabla3;
+    margin: 10px;
+    }
+#tabla4{
+    grid-area: tabla4;
+    margin: 10px;
+ }
+ #tabla5{
+    grid-area: tabla5;
+    margin: 10px;
+        }
+#tabla6{
+    grid-area: tabla6;
+    margin: 10px;
+ }
+.res{
+    background-color: #50C878;
+}
