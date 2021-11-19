@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBA DE PERSONALIDAD</title>
+    <link rel="stylesheet" href="estructura.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="superate sin fondo.png">
+</head>
+
+
+<body id="body">
+    
+    <header >
+        <div class="icon__menu"  >
+            <i class="fas fa-bars" id="btn_open"></i>
+
+        </div>
+        <h1 class="titulo" style="padding-left: 380px;">
+          Prueba de Personalidad
+        </h1>  
+        <div class="cont-temporizador">
+
+            <div class="bloque">
+                <div class="horas" id="horas">--</div>
+                <p>HORAS</p>
+            </div>
+            <div class="bloque">
+                <div class="minutos" id="minutos">--</div>
+                <p>MINUTOS</p>
+            </div>
+            <div class="bloque">
+                <div class="segundos" id="segundos">--</div>
+                <p>SEGUNDOS</p>
+            </div>
+        </div>
+        <a href="#">
+            <div class="option">
+                <span class="material-icons">
+                    logout
+                </span>
+            </div>
+        </a>      
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="logito">
+            <img src="superate sin fondo.png" alt="logito" class="superatel">
+            <h4 class="supn">¡Supérate!</h4>            
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-user" title="Usuario" aria-colspan="usuario"></i>
+                    <h4>Usuario</h4>
+                </div>
+            </a>
+    
+    
+
+        </div>
+
+    </div>
+
+    <main>
+        <div id="cuerpo">
+            <h3 id="ejemplo">
+                 Prueba de Personalidad
+            </h3>
+            <table class="tabla-contenido">
+            <tr>
+              <th>Marque sus respuestas en la columna A</th>
+              <th  class="space" colspan="2">A</th>
+            </tr>
+            <tr>
+              <th> </th>
+              <th class="space" > + </th>
+              <th class="space"> - </th>
+            </tr>
+            
+              <tr>
+                <td> <ol start="1"><li><label for="pre1"> Es bastante sociable.</label></li></ol></td>
+                <td><input type="radio" value="pre1" id="answer1" name="answer1"></td>
+                <td><input type="radio"value="pre1" id="answer1"name="answer1"></td>
+              
+              </tr>
+              <tr>
+                <td><ol><label for="pre10a"> Le falta confianza en si mismo (a).</label></ol></td>
+                <td><input type="radio" value="pre1a" id="answer1a" name="answer1a"></td>
+                <td><input type="radio" value="prea" id="answer1a" name="answer1a"></td>
+              </tr>
+              <tr>
+                 
+                <td><ol><label for="pre10b"> Es perfeccionista con cualquier trabajo que realiza.</label></ol></td>
+                <td><input type="radio"value="pre1b" id="answer1b" name="answer1b"></td>
+                <td><input type="radio"value="pre1b" id="answer1b" name="answer1b"></td>
+              </tr>
+              <tr>
+                 
+                <td class="espaciobajo"><ol><label for="pre10c"> Tiende a ser algo emocional.</label></ol></td>
+                <td  class="espaciobajo"><input type="radio"value="pre1c" id="answer1c" name="answer1c"></td>
+                <td  class="espaciobajo"><input type="radio"value="pre1c" id="answer1c" name="answer1c"></td>
+              </tr>
+            
+              <tr>
+                 
+                <td><ol start="2"><li><label for="pre2"> No le interesa estar con otras personas.</label></li></ol></td>
+                <td><input type="radio"value="pre2" id="answer2" name="answer2"></td>
+                <td><input type="radio"value="pre2" id="answer2" name="answer2"></td>
+                
+              </tr>
+              <tr>
+                 
+                <td><ol><label for="pre2a"> Se siente libre de ansiedades y tensiones.</label></ol></td>
+                <td><input type="radio"value="pre2a" id="answer2a" name="answer2a"></td>
+                <td><input type="radio"value="pre2a" id="answer2a" name="answer2a"></td>
+              </tr>
+              <tr>
+                <td><ol><label for="pre2b"> Es una persona poco confiable.</label></ol></td>
+                <td><input type="radio"value="pre2b" id="answer2b" name="answer2b"></td>
+                <td><input type="radio"value="pre2b" id="answer2b" name="answer2b"></td>
+              </tr>
+                <tr>
+                <td class="espaciobajo"><ol><label for="pre2c"> Toma la conducción en las discusiones de grupo.</label></ol></td>
+                <td class="espaciobajo"><input type="radio"value="pre2c" id="answer2c" name="answer2c"></td>
+                <td class="espaciobajo"><input type="radio"value="pre2c" id="answer2c" name="answer2c"></td>
+              </tr>
+              <tr>
+                <td><ol start="3"><li><label for="pre3"> Actúa de manera nerviosa e inestable.</label></li></ol></td>
+                <td><input type="radio"value="pre3" id="answer3" name="answer3"></td>
+                <td><input type="radio"value="pre3" id="answer3" name="answer3"></td>
+              </tr>
+
+              <tr>
+                <td><ol><label for="pre3a"> Tiene una gran infleuncia sobre los demás.</label></ol></td>
+                <td><input type="radio"value="pre3a" id="answer3a" name="answer3a"></td>
+                <td><input type="radio"value="pre3a" id="answer3a" name="answer3a"></td>
+              </tr>
+
+              <tr>
+                <td><ol><label for="pre3b"> No le gustan las reuniones sociales.</label></ol></td>
+                <td><input type="radio"value="pre3b" id="answer3b" name="answer3b"></td>
+                <td><input type="radio"value="pre3b" id="answer3b" name="answer3b"></td>
+              </tr>
+
+              <tr>
+                <td class="espaciobajo"><ol><label for="pre3c" > Es un(a) trabajador(a) muy persistente y formal.</label></ol></td>
+                <td class="espaciobajo"><input type="radio"value="pre3c" id="answer3c" name="answer3c"></td>
+                <td class="espaciobajo"><input type="radio"value="pre3c" id="answer3c" name="answer3c"></td>
+              </tr>
+
+              <tr>
+                <td><ol start="4"><li><label for="pre4"> Se le facilita hacer nuevas amistades.</label></li></ol></td>
+                <td><input type="radio"value="pre4" id="answer4" name="answer4"></td>
+                <td><input type="radio"value="pre4" id="answer4" name="answer4"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre4a"> No puede realizar la misma tarea por mucho tiempo.</label></ol></td>
+                <td><input type="radio"value="pre4a" id="answer4a" name="answer4a"></td>
+                <td><input type="radio"value="pre4a" id="answer4a" name="answer4a"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre4b"> Es fácilmente manejado(a) por los denás.</label></ol></td>
+                <td><input type="radio"value="pre4b" id="answer4b" name="answer4b"></td>
+                <td><input type="radio"value="pre4b" id="answer4b" name="answer4b"></td>
+              </tr>
+                <tr>
+                <td class="espaciobajo"><ol><label for="pre4c"> Mantiene el autocontrol aun si esta frustrado(a).</label></ol></td>
+                <td class="espaciobajo"><input type="radio"value="pre4c" id="answer4c" name="answer4c"></td>
+                <td class="espaciobajo"><input type="radio"value="pre4c" id="answer4c" name="answer4c"></td>
+              </tr>
+                <tr>
+                <td><ol start="5"><li><label for="pre5" > Es capaz de tonar decisiones importantes sin ayuda.</label></li></ol></td>
+                <td><input type="radio"value="pre5" id="answer5" name="answer5"></td>
+                <td><input type="radio"value="pre5" id="answer5" name="answer5"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre5a" > No se relaciona fácilmente con gente desconocida.</label></ol></td>
+                <td><input type="radio"value="pre5" id="answer5" name="answer5"></td>
+                <td><input type="radio"value="pre5" id="answer14" name="answer5"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre5b" > Tiende a sentirse tenso(a) o muy preionado(a).</label></ol></td>
+                <td><input type="radio"value="pre5b" id="answer5b" name="answer5b"></td>
+                <td><input type="radio"value="pre5b" id="answer5b" name="answer5b"></td>
+              </tr>
+                <tr>
+                <td class="espaciobajo"><ol><label for="pre5c" > Concluye su trabajo a pesar de los problemas.</label></ol></td>
+                <td class="espaciobajo"><input type="radio"value="pre5c" id="answer5c" name="answer5c"></td>
+                <td class="espaciobajo"><input type="radio"value="pre5c" id="answer5c" name="answer5c"></td>
+              </tr>
+                <tr>
+                <td><ol start="6"><li><label for="pre6" > No le interesa mucho ser sociable.</label> </li></ol></td>
+                <td><input type="radio"value="pre6" id="answer6" name="answer6"></td>
+                <td><input type="radio"value="pre6" id="answer6" name="answer6"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre6a"> No toma enserio sus responsabilidades.</label></ol></td>
+                <td><input type="radio"value="pre6a" id="answer6a" name="answer6a"></td>
+                <td><input type="radio"value="pre6a" id="answer6a" name="answer6a"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre6b"> Se mantiene estable y sereno(a).</label></ol></td>
+                <td><input type="radio"value="pre6b" id="answer6b" name="answer6b"></td>
+                <td><input type="radio"value="pre6b" id="answer6b" name="answerr6b"></td>
+              </tr>
+                <tr>
+                <td class="espaciobajo"><ol><label for="pre6c"> Tomael mando en actividades de grupo.</label></ol></td>
+                <td class="espaciobajo"><input type="radio"value="pre6c" id="answer6c" name="answer6c"></td>
+                <td class="espaciobajo"><input type="radio"value="pre6c" id="answer6c" name="answer6c"></td>
+              </tr>
+                <tr>
+                <td><ol start="7"><li><label for="pre7"> Es una persona en quien se puede confiar.</label></li></ol></td>.
+                <td><input type="radio"value="pre7" id="answer7" name="answer7"></td>
+                <td><input type="radio"value="pre7" id="answer7" name="answer7"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre7a" > Se disguta fácilmente cuando las cosas van mal.</label></ol></td>
+                <td><input type="radio"value="pre7a" id="answer7a" name="answer7a"></td>
+                <td><input type="radio"value="pre7a" id="answer7a" name="answer7a"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre7b"> No se siente muy seguro(a) de sus propias opiniones.</label></ol></td>
+                <td><input type="radio"value="pre7b" id="answer7b" name="answer7b"></td>
+                <td><input type="radio"value="pre7b" id="answer7b" name="answer7b"></td>
+              </tr>
+                <tr>
+                <td class="espaciobajo"><ol><label for="pre7c"> Prefiere estar cerca de la gente.</label></ol></td>
+                <td class="espaciobajo"><input type="radio"value="pre7c" id="answer7c" name="answer7c"></td>
+                <td class="espaciobajo"><input type="radio"value="pre7c" id="answer7c" name="answer7c"></td>
+              </tr>
+                <tr>
+                <td><ol start="8"><li><label for="pre8"> Le resulta fácil influir en los demás.</label></li></ol></td>
+                <td><input type="radio"value="pre17" id="answer8" name="answer8"></td>
+                <td><input type="radio"value="pre17" id="answer8" name="answer8"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre8a"> Termina su trabajo a pesar de los obstáculos.</label></ol></td>
+                <td><input type="radio"value="pre8a" id="answer8a" name="answer8a"></td>
+                <td><input type="radio"value="pre8a" id="answer8a" name="answer8a"></td>
+              </tr>
+                <tr>   
+                <td><ol><label for="pre8b">Limita sus relaciones sociales a unos cuantos.</label></ol></td>
+                <td><input type="radio"value="pre8b" id="answer8b" name="answer8b"></td>
+                <td><input type="radio"value="pre8b" id="answer8b" name="answer8b"></td>
+              </tr>
+                <tr>
+                <td  class="espaciobajo"><ol><label for="pre8c"> Tiende a ser una persona más bien nerviosa.</label></ol></td>
+                <td class="espaciobajo"><input type="radio"value="pre8c" id="answer8c" name="answer8c"></td>
+                <td class="espaciobajo"><input type="radio"value="pre8c" id="answer8c" name="answer8c"></td>
+              </tr>
+                <tr>
+                <td><ol start="9"><li><label for="pre9"> No hace amigos fácilmente.</label></li></ol></td>
+                <td><input type="radio"value="pre9" id="answer9" name="answer9"></td>
+                <td><input type="radio"value="pre9" id="answer9" name="answer9"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre9a"> Toma parte activa en los asuntos de grupo.</label></ol></td>
+                <td><input type="radio"value="pre9a" id="answer9a" name="answer9a"></td>
+                <td><input type="radio"value="pre9a" id="answer9a" name="answer9a"></td>
+              </tr>
+                <tr>
+                <td><ol><label for="pre9b"> Persiste en tareas rutinarias hasta concluirlas.</label></ol></td>
+                <td><input type="radio"value="pre9b" id="answer9b" name="answer9b"></td>
+                <td><input type="radio"value="pre9b" id="answer9b" name="answer9b"></td>
+              </tr>
+                <tr>
+                <td class="espaciobajo"><ol><label for="pre9c"> No se encuentra emocionalmente equilibrado(a).</label></ol></td>
+                <td class="espaciobajo"><input type="radio"value="pre9c" id="answer9c" name="answer9c"></td>
+                <td class="espaciobajo"><input type="radio"value="pre9c" id="answer9c" name="answer9c"></td>
+              </tr>
+              
+            
+            </table>
+        </div>
+        <div id="aside"></div>
+        <div class="move">
+             <a href="p--ipg (2).html" id="button1">Atrás</a> 
+             <a href="grupob.html" id="button2">Siguiente</a> 
+        </div>
+    </div> 
+    
+    </main>
+
+
+</body>
+</html>
+
+<script src="estructura.js"></script>
+
+</body>
+</html>

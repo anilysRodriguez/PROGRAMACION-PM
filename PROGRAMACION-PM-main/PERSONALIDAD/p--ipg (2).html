@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Personalidad</title>
+    <link rel="stylesheet" href="p-ipg.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="superate sin fondo.png">
+</head>
+
+
+<body id="body">
+    
+    <header >
+      <div class="icon__menu"  >
+        <i class="fas fa-bars" id="btn_open"></i>
+      </div>
+      <h3 id="di">
+          <p>PERFIL-INVENTARIO DE LA PERSONALIDAD</p>
+          <p>Protocolo</p>
+          <p>P--IPG</p>
+      </h3>   
+        
+      <a href="#">
+        <div class="option">
+          <span class="material-icons">
+            logout
+          </span>
+        </div>
+      </a>      
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="logito">
+            <img src="superate sin fondo.png" alt="logito" class="superatel">
+            <h4 class="supn">¡Supérate!</h4>            
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-user" title="Usuario" aria-colspan="usuario"></i>
+                    <h4>Usuario</h4>
+                </div>
+            </a>
+    
+    
+
+        </div>
+
+    </div>
+
+    <div id="Datos">
+        
+        <table class="tabla-contenido">
+            <tr>
+                <th class="texto"><label for="Nombre"><b>Nombre: </b></label></th>
+                <th><input type="text" id="Nombre"   required></th>
+            </tr>
+            <tr>
+                <th class="texto"><label for="Sexo"> <b>Sexo: </b></label></th>
+                <th><select id="Sexo">
+                    <option value="NA">-Seleccione una opcion-</option>
+                    <option value="Masculino">M</option>
+                    <option value="Femenino">F</option>
+                </select></th>
+                <br> <br> 
+            </tr>
+            <tr>
+                <th class="texto"><label for="Fecha"> <b>Fecha de nacimiento:</b></label></th>
+                <th><input type="date" id="Fecha"  required></th>
+                <br><br>
+            </tr>
+            <tr>
+                <th class="texto"><label for="Escuela actual">  <b>Escuela actual:</b></label></th>
+                <th><input type="text" id="Escuela actual"  required ></th>
+                <br> <br>
+            </tr>
+            <tr>
+                <th class="texto"><label for="Grado"><b>Grado actual:  </b> </label></th>
+                <th><input type="text" id="Grado"  required></th> 
+                <br><br> 
+            </tr>
+        </table>      
+        
+   </div>
+       
+    <main>
+      <div id="cuerpo">
+              <h3 id="ejemplo">
+                  Instrucciones
+              </h3>
+              <p>En este protocolo encontrará varias descripciones de características personales. Dichas descripciones se agrupan en conjuntos de cuatro. Usted debe examinar cada conjunto y elegir la descripción a la que usted más se parece. Una vez escogida, márquela con una línea gruesa en la columna designada con el signo de <b>+ (Más)</b>.</p>
+              <p>Después, examine las otras tres descripciones del grupo y elija aquella a la que usted menos se parece; entonces márquela con la barra en la columna designada con el signo de <b>- (Menos)</b>. </p>
+             <p class="dospuntos">Ejemplo:</p>      
+             <table class="tabla-contenido">
+                <tr>
+                    <th> </th>
+                    <th class="space" > + </th>
+                    <th class="space"> - </th>
+                  </tr>
+                <tr>
+                    <td> <li><label for="EXAMPLE">Tiene excelente apetito.</label></li></ol></td>
+                    <td><input type="radio" value="EXAMPLE" id="EXAMPLE" name="EXAMPLE" ></td>
+                    <td><input type="radio"value="EXAMPLE" id="EXAMPLE"name="EXAMPLE"></td>
+                  
+                </tr>
+                <tr>
+                    <td> <li><label for="EXAMPLE">Se enferma con frecuencia.</label></li></ol></td>
+                    <td><input type="radio" value="EXAMPLEa" id="EXAMPLE" name="EXAMPLEa"></td>
+                    <td><input type="radio"value="EXAMPLEa" id="EXAMPLE"name="EXAMPLEa" ></td>
+                  
+                </tr>
+                <tr>
+                    <td> <li><label for="EXAMPLE">Sigue una dieta balanceada.</label></li></ol></td>
+                    <td><input type="radio" value="EXAMPLEb" id="EXAMPLE" name="EXAMPLEb"></td>
+                    <td><input type="radio"value="EXAMPLEb" id="EXAMPLE"name="EXAMPLEb" ></td>
+                  
+                </tr>
+                <tr>
+                    <td> <li><label for="EXAMPLE">No hace suficiente ejercicio.</label></li></ol></td>
+                    <td><input type="radio" value="EXAMPLEc" id="EXAMPLE" name="EXAMPLEc" ></td>
+                    <td><input type="radio"value="EXAMPLEc" id="EXAMPLE"name="EXAMPLEc" ></td>
+                  
+                </tr>
+             </table> 
+             <p>Suponga que después de leer las cuatro afirmaciones de ejemplo , decidió que , aun cuando varias se aplican a usted, "no hace suficiente ejercicio "es la que más se parece. Por tanto , marcará el espacio correspondiente en la columna designada con el signo de <b>+</b>, como se encuentra en el ejemplo. </p>   
+              <p>Examinará entonces las otras tres afirmaciones y decidirá cual es a la que usted menos se parece. Suponga que "se enferma con frecuencia" se le parece menos que las otras dos. Marcará el espacio correspondiente en la columna designada con el signo <b>-</b> como se muestra en el ejemplo anterior.</p>
+              <p>Para cada grupo solo debe existir una marca en la columna <b>+</b>, y marcará en la columna <b>-</b> No deben existir marcas en las dos afirmaciones restantes.</p>
+              <p> En algunos casos le será difícil decidir cuál de las siguientes afirmaciones deberá marcar. Tome las mejores decisiones que pueda. No existen respuestas correctas o incorrectas. En cada grupo deberá marcar únicamente dos afirmaciones en la manera en la que mejor se apliquen a usted. Asegúrese de marcar una afirmación que mas se parece a usted y una que menos que se parece. Deje las dos afirmaciones restantes sin marcar ; haga lo mismo con cada grupo y no omita ninguno de ellos.</p>
+              <p> Ahora abra el protocolo y comience con el primer grupo. </p>
+              <div class="imagenes">
+                <table class="tablaimg" align="right">
+                    <tr>
+                        <td>
+                            <img class="imgf" src="triangulo.jpeg"/>
+                        </td>
+                        <td>
+                            <img class="imgf" src="mm.jpeg"/>
+                        </td>
+                        <td>
+                            <img class="imgf" src="codigo.jpeg"/>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+             
+    
+            <div class="text">
+                <p>
+                    <h6 style="padding-left: 20px;">Copyright &#169; 1978, 1955, 1953, 1951,<br>
+                        Hercourt Brace Jovanovich, Inc.<br>
+                        Derechos reservados <br>
+                        Copyright &#169; 1992, 1984, 1981, Leonard V. Gordon <br>
+                        Copyright &#169; 1994 Editorial El Manual Moderno, S.A. de C.V.  <br>
+                        Av. Sonora 206, Col. Hipódromo 06100, México, D. F. <br>  </h6>
+ 
+
+                </p>
+
+            </div>
+          
+            
+         
+            <h6 style="padding-left: 20px;">
+                Prohibida la reproducción parcial o total de este material por cualquier medio electrónico o mecánico, incluyendo la fotocopia, grabación o cualquier sistema de almacenamiento, sin permiso previo y escrito del autor.
+            </h6>
+      </div>
+            <div id="lu">  
+                <h1  class="remind"><b> Recuerde </b></h1>
+                <br> 
+            
+                    <p> 1. Revisar que solo haya marcado dos espacios para cada grupo de afirmaciones.</p><br>
+                    <p> 2. Revisar todas sus respuestas antes de entregar.</p>
+            
+            
+                
+                <br> 
+            </div>
+            <div id="aside"></div>
+            <div class="move">
+                <a href="grupoa.html" id="button1">Empezar la Prueba</a> 
+            </div>
+        </div> 
+    
+
+    </main>
+
+</body>
+</html>
+
+<script src="estructura.js"></script>
+
+</body>
+</html>

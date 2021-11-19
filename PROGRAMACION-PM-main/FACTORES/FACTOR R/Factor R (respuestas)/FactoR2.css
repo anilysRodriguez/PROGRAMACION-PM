@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin-left: 80px;
+    margin-top: 80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+main{
+    padding: 20px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #50C878;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+h1{
+    padding-left: 570px;
+
+}
+.icon__menu{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+   
+}
+
+.icon__menu i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+.logito{
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+ .logito, .superatel{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+
+}
+
+.supn{
+    margin-left: 20px;
+}
+
+.superatel:before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: -20px;
+}
+
+
+.menu__side{
+    width: 80px;
+    height: 100%;
+    background: #01395c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #01395c;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar{
+    display: none;
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.name__page{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name__page i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.options__menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+
+.options__menu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+    padding-bottom: 30px;
+}
+
+.options__menu a:hover{
+    color: white;
+}
+/*ICONO DE CONTACTO*/
+.options__menu .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options__menu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a.selected{
+    color: #fff;
+}
+
+.selected:before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/*Clases para usar en JavaScript*/
+
+.body_move{
+    margin-left: 250px;
+}
+
+.menu__side_move{
+    width: 250px;
+}
+
+
+@media screen and (max-width: 760px){
+    .body_move{
+        margin-left: 0px;
+    }
+
+    .menu__side_move{
+        width: 80px;
+        left: -80px;
+    }
+}
+
+/*CUADRO DEL CENTRO*/
+#cuerpo{
+    border-radius: 10px;
+    background-color: #bdc8cf;
+    color: rgb(0, 0, 0);
+    font-size:larger;
+    grid-area: cuerpo;
+    margin: 40px;
+}
+#cuerpo>p{
+    padding: 20px;
+}
+#ejemplo{
+    background-color: #01395c;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    padding: 30px;  
+    color: white; 
+}
+#aside{
+    grid-area: aside;
+
+}
+.move{
+    display: flex;
+    width: 100%; 
+    
+}
+
+#button2{
+    position: absolute;
+    right:    0;
+    margin: 10px;
+
+}
+#button1{
+    margin: 10px;
+}
+
+#ejemplo{
+    text-align: center;
+}
+
+.material-icons{
+    padding-left: 49px;
+
+}
+
+a{
+    text-decoration: none;  
+    color: aliceblue; 
+    font-weight: bold;
+    font-size: 5mm;  
+    padding: 5px;
+    border-radius: 5px;
+
+}
+#button1, #button2{
+    background-color: #50C878;
+}
+
+
+/*CSS DEL RELOJ*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+  
+.cont-temporizador{
+    display: flex;
+    justify-content: center;   
+    margin-top: 50px; 
+    margin-top: 10px;
+    margin-left: 90px;
+}
+  
+.cont-temporizador .bloque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.cont-temporizador .bloque div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+  
+.cont-temporizador .bloque p{
+    font-size: 11px;
+    font-weight: bold;
+    color: #d6d6d6;
+}
+.littlecont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 5 auto;
+    grid-template-areas: " one   option1   six   option6 "
+                         " two   option2   seven option7 "
+                         " three option3   eight option8 "
+                         " four  option4   nine  option9"
+                         " five  option5   ten   option10 ";
+   
+    max-width: 80%;
+    margin: auto;
+
+
+}
+.one{
+   grid-area: one;
+   padding: 20px;
+   margin-left: 0px;
+}
+.option1{
+    grid-area: option1;
+    padding: 20px;
+}
+.two{
+    grid-area: two;
+    padding: 20px;
+}
+.option2{
+    grid-area: option2;
+    padding: 20px;
+}
+.three{
+    grid-area: three;
+    padding: 20px;
+}
+.option3{
+    grid-area: option3;
+    padding: 20px;
+}
+.four{
+    grid-area: four;
+    padding: 20px;
+}
+.option4{
+    grid-area: option4;
+    padding: 20px;
+}
+.five{
+    grid-area: five;
+    padding: 20px;
+}
+.option5{
+    grid-area: option5;
+    padding: 20px;
+}
+.six{
+    grid-area: six;
+    padding: 20px;
+}
+.option6{
+    grid-area: option6;
+    padding: 20px;
+}
+.seven{
+    grid-area: seven;
+    padding: 20px;
+}
+.option7{
+    grid-area: option7;
+    padding: 20px;
+}
+.eight{
+    grid-area: eight;
+    padding: 20px;
+}
+.option8{
+    grid-area: option8;
+    padding: 20px;
+  
+}
+.nine{
+    grid-area: nine;
+    padding: 20px;
+}
+.option9{
+    grid-area: option9;
+    padding: 20px;
+}
+.ten{
+    grid-area: ten;
+    padding: 20px;
+}
+.option10{
+    grid-area: option10;
+    padding: 20px;
+}
+.options{
+    border-radius: 5px 5px 5px 5px;
+    font-size: medium;
+    margin-right: 50px;
+    font-weight: bold;
+   
+
+}

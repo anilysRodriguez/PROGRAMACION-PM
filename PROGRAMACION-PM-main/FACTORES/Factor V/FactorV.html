@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTOR V</title>
+    <link rel="stylesheet" href="estructura.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="factorV.js"></script>
+    <link rel="shortcut icon" href="superate sin fondo.png">
+
+</head>
+
+
+<body id="body">
+    
+    <header >
+        <div class="icon__menu"  >
+            <i class="fas fa-bars" id="btn_open"></i>
+
+        </div>
+        <h1>
+            Factor V
+        </h1>  
+        <div class="cont-temporizador">
+
+            <div class="bloque">
+                <div class="horas" id="horas">--</div>
+                <p>HORAS</p>
+            </div>
+            <div class="bloque">
+                <div class="minutos" id="minutos">--</div>
+                <p>MINUTOS</p>
+            </div>
+            <div class="bloque">
+                <div class="segundos" id="segundos">--</div>
+                <p>SEGUNDOS</p>
+            </div>
+        </div>
+        <a href="#">
+            <div class="option">
+                <span class="material-icons">
+                    logout
+                </span>
+            </div>
+        </a>      
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="logito">
+            <img src="superate sin fondo.png" alt="logito" class="superatel">
+            <h4 class="supn">¡Supérate!</h4>            
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-user" title="Usuario" aria-colspan="usuario"></i>
+                    <h4>Usuario</h4>
+                </div>
+            </a>
+    
+    
+
+        </div>
+
+    </div>
+
+    <main>
+
+        <div id="cuerpo">
+            <h3 id="ejemplo">
+                    Intrucciones
+                </h3>
+                <dl> <li>Encuente la palabra similar cuyo significado sea parecido o igual al enunciado que se encontra en el recuadro principal.</li>
+                    <li>Si aún no entiendes puedes levantar la mano, para poder entenderlo mejor.</li>
+                    <li>Asegurate de responder adecuadamente los enunciados </li>
+                    <li>trabaje deprisa, pero procurando no equivocarse. Tendrá <b>CUATRO MINUTOS</b> para toda esta prueba. Si no termina no se preocupe, es lo corriente</li>
+                </dl> 
+                
+                
+            <h3>
+                  Inicio
+            </h3>
+        
+        <table>
+            <tr>
+                <td>
+                    <b> E1/ Grueso</b>
+                    <br>
+                    <input type="button" id="no1" onclick="error1();" value="Enfermo">
+                    <input type="button" id="gordo" onclick="pregunta1();" value="Gordo"> 
+                    <br>
+                    <input type="button" id="no2" onclick="error2();" value="Bajo">
+                    <input type="button" onclick="error3();" id="no3" value="Agrio">
+                </td>
+                <td>
+                    <b>E/2 Anciano</b>
+                    <br>
+                    <input type="button" id="no4" onclick="error4();" value="Seco">
+                    <input type="button" id="no5" onclick="error5();" value="Largo">
+                    <br>
+                    <input type="button" id="no6" onclick="error6();" value="Feliz">
+                    <input type="button" onclick="pregunta2();" id="viejo" value="Viejo">
+                </td>
+                <td>
+                    <b>E3/Bello</b>
+                    <br>
+                    <input type="button" id="no7" onclick="error7();" value="Azul">
+                    <input type="button" onclick="pregunta3();" id="hermoso" value="Hermoso">
+                    <br>
+                    <input type="button" id="no8" onclick="error8();" value="Llano">
+                    <input type="button" id="no9" onclick="error9();" value="Frío">
+                </td>
+                <td>
+                    <b>E4/Fácil</b>
+                    <br>
+                    <input type="button" id="sencillo" onclick="pregunta4();" value="Sencillo">
+                    <input type="button" id="no10" onclick="error10();" value="Leal">
+                    <br>
+                    <input type="button" id="no11" onclick="error11();" value="Pasivo">
+                    <input type="button" id="no12" onclick="error12();" value="Joven">
+                </td>
+                <td>
+                    <b>E5/Batalla</b>
+                    <br>
+                    <input type="button" onclick="pregunta5();" id="guerra" value="Guerra">
+                    <input type="button" onclick="error13();" id="no13" value="Amarrete">
+                    <br>
+                    <input type="button" onclick="error14();" id="no14" value="Necio">
+                    <input type="button" onclick="error15();" id="no15" value="Severo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>E6/Apto</b>
+                    <br>
+                    <input type="button" onclick="error16();" id="no16" value="Calmado">
+                    <input type="button" onclick="error17();" id="no17" value="Barato">
+                    <br>
+                    <input type="button" id="habil" onclick="pregunta6();" value="Hábil">
+                    <input type="button" onclick="error18();" id="no18" value="Veloz">
+                </td>
+                <td>
+                    <b>E7/Vivir</b>
+                    <br>
+                    <input type="button" id="habitar" onclick="pregunta7();" value="Habitar">
+                    <input type="button" id="no19" onclick="error19();" value="Murmurar">
+                    <br>
+                    <input type="button" id="no20" onclick="error20();" value="Apreciado">
+                    <input type="button" id="no21" onclick="error21();" value="Colmar">
+                </td>
+                <td>
+                    <b>E8/Soberania</b>
+                    <br>
+                    <input type="button" id="no22" onclick="error22();" value="Lucrania">
+                    <input type="button" onclick="pregunta8();" id="monarquia" value="Monarquía">
+                    <br>
+                    <input type="button" id="no23" onclick="error23();" value="Altanería">
+                    <input type="button" id="no24" onclick="error24();" value="Precuencia">
+                </td>
+                <td>
+                    <b>E9/Valiente</b>
+                    <br>
+                    <input type="button" id="no25" onclick="error25();" value="Precoz">
+                    <input type="button" id="no26" onclick="error26();" value="Tonto">
+                    <br>
+                    <input type="button" id="aventurero" onclick="pregunta9();" value="Aventurero">
+                    <input type="button" id="no27" onclick="error27();" value="Grande">
+                </td>
+                <td>
+                    <b>E10/Mentira</b>
+                    <br>
+                    <input type="button" id="embuste" onclick="pregunta10();" value="Embuste">
+                    <input type="button" id="no28" onclick="error28();" value="Traición">
+                    <br>
+                    <input type="button" id="no29" onclick="error29();" value="Rey">
+                    <input type="button" id="no30" onclick="error30();" value="Combate">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>E11/Crear</b>
+                    <br>
+                    <input type="button" id="no31" onclick="error31();" value="Soportar">
+                    <input type="button" id="inventar" onclick="pregunta11();" value="Inventar">
+                    <br>
+                    <input type="button" id="no32" onclick="error32();" value="Fortalecer">
+                    <input type="button" id="no33" onclick="error33();" value="Diagnosticar">
+                </td>
+                <td>
+                    <b>E12/Cama</b>
+                    <br>
+                    <input type="button" id="no34" onclick="error34();" value="Lugar">
+                    <input type="button" id="no35" onclick="error35();" value="Conforto">
+                    <br>
+                    <input type="button" id="lecho" onclick="pregunta12();" value="Lecho">
+                    <input type="button" id="no36" onclick="error36();" value="Construcción">
+                </td>
+                <td>
+                    <b>E13/Comprar</b>
+                    <br>
+                    <input type="button" id="no37" onclick="error37();" value="Triunfar">
+                    <input type="button" id="no38" onclick="error38();" value="Poder">
+                    <br>
+                    <input type="button" id="no39" onclick="error39();" value="Calido">
+                    <input type="button" id="adquirir" onclick="pregunta13();" value="Adquirir">
+                </td>
+                <td>
+                    <b>E14/Necio</b>
+                    <br>
+                    <input type="button" id="no40" onclick="error40();" value="Alternativa">
+                    <input type="button" id="no41" onclick="error41();" value="Pecado">
+                    <br>
+                    <input type="button" onclick="pregunta14();" id="bobo" value="Bobo">
+                    <input type="button" id="no42" onclick="error42();" value="Tranque">
+                </td>
+                <td>
+                    <b>E15/Armonía</b>
+                    <br>
+                    <input type="button" id="no43" onclick="error43();" value="Gafa">
+                    <input type="button" id="no44" onclick="error44();" value="Dibujo">
+                    <br>
+                    <input type="button" id="no45" onclick="error45();" value="Locura">
+                    <input type="button" onclick="pregunta15();" id="calma" value="Calma">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>E16/Insolencia</b>
+                    <br>
+                    <input type="button" onclick="pregunta16();" id="arrogancia" value="Arrogancia">
+                    <input type="button" id="no46" onclick="error46();" value="Maestro">
+                    <br>
+                    <input type="button" id="no47" onclick="error47();" value="Insulto">
+                    <input type="button" id="no48" onclick="error48();" value="Enorme">
+                </td>
+                <td>
+                    <b>E17/Congelar</b>
+                    <br>
+                    <input type="button" id="no49" onclick="error49();" value="Obcesión">
+                    <input type="button" id="no50" onclick="error50();" value="Oscuro">
+                    <br>
+                    <input type="button" onclick="pregunta17();" id="frizar" value="Frizar">
+                    <input type="button" id="no51" onclick="error51();" value="Pieza">
+                </td>
+                <td>
+                    <b>E18/Morir</b>
+                    <br>
+                    <input type="button" id="no52" onclick="error52();" value="Traumar">
+                    <input type="button" id="no53" onclick="error53();" value="Robar">
+                    <br>
+                    <input type="button" id="no54" onclick="error54();" value="Explotar">
+                    <input type="button" onclick="pregunta18();" id="fallecer" value="Fallecer">
+                </td>
+                <td>
+                    <b>E19/Generoso</b>
+                    <br>
+                    <input type="button" id="no55" onclick="error55();" value="Traje">
+                    <input type="button" id="no56" onclick="error56();" value="Horrible">
+                    <br>
+                    <input type="button" onclick="pregunta19();" id="dadivoso" value="Dadivoso">
+                    <input type="button" id="no57" onclick="error57();"  value="Miedo">
+                </td>
+                <td>
+                    <b>E20/Delegación</b>
+                    <br>
+                    <input type="button" id="no58" onclick="error58();" value="Alojar">
+                    <input type="button" onclick="pregunta20();" id="junta" value="Junta">
+                    <br>
+                    <input type="button" id="no59" onclick="error59();" value="Lucha">
+                    <input type="button" id="no60" onclick="error60();" value="Medicar">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>E21/Lanzar </b>
+                    <br>
+                    <input type="button" id="no61" onclick="error61();" value="Concursar">
+                    <input type="button" id="no62" onclick="error62();" value="Tragar">
+                    <br>
+                    <input type="button" onclick="pregunta21();" id="arrojar" value="Arrojar">
+                    <input type="button" id="no63" onclick="error63();" value="Trabajo">
+                </td>
+                <td>
+                    <b>E22/Sabroso</b>
+                    <br>
+                    <input type="button" id="no64" onclick="error64();" value="Divertido">
+                    <input type="button" id="no65" onclick="error65();" value="Espeluznante">
+                    <br>
+                    <input type="button" onclick="pregunta22();" id="rico" value="Rico">
+                    <input type="button" id="no66" onclick="error66();" value="Goloso">
+                </td>
+                <td>
+                    <b>E23/Conocer</b>
+                    <br>
+                    <input type="button" id="no67" onclick="error67();" value="Llorar">
+                    <input type="button" id="no68" onclick="error68();" value="Duda">
+                    <br>
+                    <input type="button" id="no69" onclick="error69();" value="Curar">
+                    <input type="button" onclick="pregunta23();" id="saber" value="Saber">
+                </td>
+                <td>
+                    <b>E24/Sufrir</b>
+                    <br>  
+                    <input type="button" onclick="pregunta24();" id="adolecer" value="Adolecer">
+                    <input type="button" id="no70" onclick="error70();" value="Florecer">
+                    <br>
+                    <input type="button" id="no71" onclick="error71();" value="Gozar">
+                    <input type="button" id="no72" onclick="error72();" value="Llegar">
+                    
+                </td>
+                <td>
+                    <b>E25/Querer</b>
+                    <br>
+                    <input type="button" onclick="pregunta25();" id="pretender" value="Pretender">
+                    <input type="button" id="no73" onclick="error73();" value="Asumir">
+                    <br>
+                    <input type="button" id="no74" onclick="error74();" value="Difamar">
+                    <input type="button" id="no75" onclick="error75();" value="Conocer">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>E26/Tiniebla</b>
+                    <br>
+                    <input type="button" id="no76" onclick="error76();" value="Crepusculo">
+                    <input type="button" id="no77" onclick="error77();" value="Eclipse">
+                    <br>
+                    <input type="button" onclick="pregunta26();" id="penumbra" value="Penunmbra">
+                    <input type="button" id="no78" onclick="error78();" value="Aliento">
+                </td>
+                <td>
+                    <b>E27/Momento</b>
+                    <br>
+                    <input type="button" onclick="pregunta27();" id="instante" value="Instante">
+                    <input type="button" id="no79" onclick="error79();" value="Demonio">
+                    <br>
+                    <input type="button" id="no80" onclick="error80();" value="Caliz">
+                    <input type="button" id="no81" onclick="error81();" value="Temperamento">
+                </td>
+                <td>
+                    <b>E28/Nota</b>
+                    <br>
+                    <input type="button" onclick="pregunta28();" id="calificacion" value="Calificación">
+                    <input type="button" id="no82" onclick="error82();" value="Abreviatura">
+                    <br>
+                    <input type="button" id="no83" onclick="error83();" value="Escritorio">
+                    <input type="button" id="no84" onclick="error84();" value="Papel">
+                </td>
+                <td>
+                    <b>E29/Saeta</b>
+                    <br>
+                    <input type="button" id="no85" onclick="error85();" value="Dardo">
+                    <input type="button" onclick="pregunta29();" id="flecha" value="Flecha">
+                    <br>
+                    <input type="button" id="no86" onclick="error86();" value="Droga">
+                    <input type="button" id="no87" onclick="error87();" value="Espada">
+                </td>
+                <td>
+                    <b>E30/Exponer</b>
+                    <br>
+                    <input type="button" id="no88" onclick="error88();" value="Charlar">
+                    <input type="button" id="no89" onclick="error89();" value="Concluir">
+                    <br>
+                    <input type="button" onclick="pregunta30();" id="expresar" value="Expresar">
+                    <input type="button" id="no90" onclick="error90();" value="Dialogar">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>E31/Retrato</b>
+                    <br>
+                    <input type="button" id="no91" onclick="error91();" value="Musica">
+                    <input type="button" id="no92" onclick="error92();" value="Calendario">
+                    <br>
+                    <input type="button" onclick="pregunta31();" id="fotografia" value="Fotografía">
+                    <input type="button" id="no93" onclick="error93();" value="Parte">
+                </td>
+                <td>
+                    <b>E32/Detener</b>
+                    <br>
+                    <input type="button" id="no94" onclick="error94();" value="Apagar">
+                    <input type="button" id="no95" onclick="error95();" value="Escabullir">
+                    <br>
+                    <input type="button" id="no96" onclick="error96();" value="Calcular">
+                    <input type="button" onclick="pregunta32();" id="parar" value="Parar">
+                </td>
+                <td>
+                    <b>E33/Añorar</b>
+                    <br>
+                    <input type="button" id="no97" onclick="error97();" value="Olvidar">
+                    <input type="button" onclick="pregunta33();" id="extrañar" value="Extrañar">
+                    <br>
+                    <input type="button" id="no98" onclick="error98();" value="Temer">
+                    <input type="button" id="no99" onclick="error99();" value="Abrazar">
+                </td>
+                <td>
+                    <b>E34/Fingir</b>
+                    <br>
+                    <input type="button" id="no100" onclick="error100();" value="Aplastar">
+                    <input type="button" id="no101" onclick="error101();" value="Tomar">
+                    <br>
+                    <input type="button" id="no102" onclick="error102();" value="Actuar">
+                    <input type="button" onclick="pregunta34();" id="disimular" value="Disimular">
+                </td>
+                <td>
+                    <b>E35/Alumbrar</b>
+                    <br>
+                    <input type="button" id="no103" onclick="error103();" value="Destellar">
+                    <input type="button" onclick="pregunta35();" id="iluminar" value="Iluminar">
+                    <br>
+                    <input type="button" id="no104" onclick="error104();" value="Contaminar">
+                    <input type="button" id="no105" onclick="error105();" value="Guiar">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>E36/Poderoso</b>
+                    <br>
+                    <input type="button" onclick="pregunta36();" id="magnete" value="Magnete">
+                    <input type="button" id="no106" onclick="error106();" value="Lumbar">
+                    <br>
+                    <input type="button" id="no107" onclick="error107();" value="Regla">
+                    <input type="button" id="no108" onclick="error108();" value="Limbo">
+                </td>
+                <td>
+                    <b>E37/Manuscribir</b>
+                    <br>
+                    <input type="button" id="no109" onclick="error109();" value="Alambre">
+                    <input type="button" id="no110" onclick="error110();" value="Dual">
+                    <br>
+                    <input type="button" onclick="pregunta37();" id="transcribir" value="Transcribir">
+                    <input type="button" id="no111" onclick="error111();" value="Llorar">
+                </td>
+                <td>
+                    <b>E38/Lucha</b>
+                    <br>
+                    <input type="button" id="no112" onclick="error112();" value="Navegar">
+                    <input type="button" id="no113" onclick="error113();" value="Lavor">
+                    <br>
+                    <input type="button" onclick="pregunta38();" id="pelea" value="Pelea">
+                    <input type="button" id="no114" onclick="error114();" value="Construir">
+                </td>
+            </tr>
+            <br>
+        
+        </table>
+
+        <br><br>
+        <b>Espera</b> No vuelva la pagina hasta que se lo indiquen
+        <br>
+
+
+    </div>
+        <div id="aside"></div>
+        <div class="move">
+             <a href="../Instrucciones/I-PMA.html" id="button1">Atrás </a> 
+             <a href="../Factor F/Instrucciones-factor F/estructua.html" id="button2">Siguiente </a> 
+        </div>
+    </div> 
+    
+    </main>
+
+
+</body>
+</html>
+
+<script src="estructura.js"></script>
+
+</body>
+</html>

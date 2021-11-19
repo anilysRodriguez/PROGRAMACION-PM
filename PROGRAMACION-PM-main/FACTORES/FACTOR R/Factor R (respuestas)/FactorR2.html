@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTOR R</title>
+    <link rel="stylesheet" href="FactoR2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="superate sin fondo.png">
+
+</head>
+
+
+<body id="body">
+    
+    <header >
+        <div class="icon__menu"  >
+            <i class="fas fa-bars" id="btn_open"></i>
+
+        </div>
+        <h1>
+            Factor R
+        </h1>  
+        <div class="cont-temporizador">
+
+            <div class="bloque">
+                <div class="horas" id="horas">--</div>
+                <p>HORAS</p>
+            </div>
+            <div class="bloque">
+                <div class="minutos" id="minutos">--</div>
+                <p>MINUTOS</p>
+            </div>
+            <div class="bloque">
+                <div class="segundos" id="segundos">--</div>
+                <p>SEGUNDOS</p>
+            </div>
+        </div>
+        <a href="#">
+            <div class="option">
+                <span class="material-icons">
+                    logout
+                </span>
+            </div>
+        </a>      
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="logito">
+            <img src="superate sin fondo.png" alt="logito" class="superatel">
+            <h4 class="supn">¡Supérate!</h4>            
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-user" title="Usuario" aria-colspan="usuario"></i>
+                    <h4>Usuario</h4>
+                </div>
+            </a>
+    
+    
+
+        </div>
+
+    </div>
+
+    <main>
+
+        <div id="cuerpo">
+            <h3 id="ejemplo">
+                Introducción - Ejemplo
+            </h3>
+          <div class="littlecont">
+                <div class="one">
+                    1. aabbccddee...
+                    
+                </div>
+
+                <div class="option1">
+                    <select name="select" class="options" id="pregunta1" onclick="preguntaI();">
+                        <option value="0">opción</option>
+                        <option value="1">a</option>
+                        <option value="2">b</option>
+                        <option value="3">f</option>
+                        <option value="4">d</option>
+                        <option value="5">g</option>
+                        <option value="6">j</option>
+                    </select>
+                </div>
+
+                <div class="two" >
+                    2. abxcdxefxg...
+                
+                </div>
+
+                <div class="option2">
+                    <select name="select" class="options" id="pregunta2" onclick="preguntaII();">
+                        <option value="0">opción</option>
+                        <option value="1">g</option>
+                        <option value="2">d</option>
+                        <option value="3">f</option>
+                        <option value="4">h</option>
+                        <option value="5">a</option>
+                        <option value="6">b</option>
+                    </select>
+                </div>
+
+                <div class="three">
+                     3. abbbcbdbeb...
+                    
+                </div>
+
+                <div class="option3">
+                    <select name="select" class="options" id="pregunta3" onclick="preguntaIII();">
+                        <option value="0">opción</option>
+                        <option value="1">f</option>
+                        <option value="2">a</option>
+                        <option value="3">h</option>
+                        <option value="4">d</option>
+                        <option value="5">g</option>
+                        <option value="6">j</option>
+                    </select>
+                </div>
+
+                <div class="four" >
+                     4. abcdefghij...
+
+                </div>
+                <div class="option4">
+                    <select name="select" class="options" id="pregunta4" onclick="preguntaIV();">
+                        <option value="0">opción</option>
+                        <option value="1">k</option>
+                        <option value="2">m</option>
+                        <option value="3">f</option>
+                        <option value="4">d</option>
+                        <option value="5">g</option>
+                        <option value="6">r</option>
+                    </select>
+                </div>
+
+                <div class="five" >
+                     5. ababababab...
+                     
+                </div>
+
+                <div class="option5">
+                    <select name="select" class="options" id="pregunta5" onclick="preguntaV();">
+                        <option value="0">opción</option>
+                        <option value="1">j</option>
+                        <option value="2">b</option>
+                        <option value="3">l</option>
+                        <option value="4">a</option>
+                        <option value="5">g</option>
+                        <option value="6">k</option>
+                    </select>
+                </div>
+
+                <div class="six" >
+                     6. axbaxbaxba...
+                    
+                </div>
+
+                <div class="option6">
+                    <select name="select" class="options" id="pregunt6" onclick="preguntaVI();">
+                        <option value="0">opción</option>
+                        <option value="1">a</option>
+                        <option value="2">p</option>
+                        <option value="3">x</option>
+                        <option value="4">d</option>
+                        <option value="5">g</option>
+                        <option value="6">o</option>
+                    </select>
+                </div>
+
+                <div class="seven" >
+                     7. htmljshtml...
+                    
+                </div>
+
+                <div class="option7">
+                    <select name="select" class="options" id="pregunta7" onclick="preguntaVII();">
+                        <option value="0">opcion</option>
+                        <option value="1">l</option>
+                        <option value="2">b</option>
+                        <option value="3">f</option>
+                        <option value="4">d</option>
+                        <option value="5">g</option>
+                        <option value="6">j</option>
+                    </select>
+                </div>
+
+                <div class="eight" >
+                     8. aeiouaeiou...
+                    
+                </div>
+
+                <div class="option8">
+                    <select name="select" class="options" id="pregunta8" onclick="preguntaVIII();">
+                        <option value="0">opcion</option>
+                        <option value="1">e</option>
+                        <option value="2">a</option>
+                        <option value="3">i</option>
+                        <option value="4">o</option>
+                        <option value="5">u</option>
+                        <option value="6">j</option>
+                    </select>
+                </div>
+
+
+                <div class="nine">
+                    <p></p>
+                    
+                </div>
+                <div class="option9">
+                    
+                </div>
+
+                <div class="ten">
+                    <p></p>
+                </div>
+                <div class="option10">
+                    
+                </div>
+
+          </div>
+           
+          
+            <p></p>
+          
+    
+        </div>
+        <div id="aside"></div>
+        <div class="move">
+             <a href="../Factor_R.html" id="button1">Atrás </a> 
+             <a href="../../Instrucciones/finalizar.html" id="button2">Adelante </a> 
+        </div>
+    </div> 
+    
+    </main>
+
+
+</body>
+</html>
+
+<script src="FactorR2.js"></script>
+
+</body>
+</html>
